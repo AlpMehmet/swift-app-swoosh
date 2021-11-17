@@ -172,6 +172,9 @@
                                             <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
                                             <color key="baseForegroundColor" red="0.8748427822" green="0.95301011579999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="we0-gf-e3t" eventType="touchUpInside" id="L47-hK-0yO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pa-ub-2DO" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="81" width="380" height="50"/>
@@ -184,6 +187,9 @@
                                             <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
                                             <color key="baseForegroundColor" red="0.8748427822" green="0.95301011579999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="we0-gf-e3t" eventType="touchUpInside" id="fsl-pw-R63"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7k-tv-vS1" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="162" width="380" height="50"/>
@@ -196,10 +202,13 @@
                                             <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
                                             <color key="baseForegroundColor" red="0.8748427822" green="0.95301011579999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="we0-gf-e3t" eventType="touchUpInside" id="bDx-4f-2F8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-6I-6Oo" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-6I-6Oo" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="17" y="738" width="380" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.36270960120000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -252,6 +261,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="GYY-EF-79x"/>
                     <connections>
+                        <outlet property="nextButton" destination="nAM-6I-6Oo" id="ZHg-Mf-MGc"/>
                         <segue destination="nI9-pV-7jk" kind="show" identifier="skillVCSegue" id="mpg-C1-u3r"/>
                     </connections>
                 </viewController>
